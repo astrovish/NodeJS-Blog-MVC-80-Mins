@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <%- include("header") %>
+    <body>
+        <div class="container">
+            <h1><%= pageTitle %></h1>
+            <form action="/blogs" method="POST">
+                <%- include("_form_fields") %>
+            </form>
+            <%- include("footer") %>
+        </div>
+        <script>
+            window.onload = () => {
+                document.getElementById("blog-title").focus();
+            }
+        </script>
+    </body>
+</html>
